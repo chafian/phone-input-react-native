@@ -1,0 +1,32 @@
+{
+  "name": "phone-input-react-native-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "yarn workspace @chafian/phone-input-react-native build",
+    "dev": "yarn workspace expo-example start",
+    "test": "yarn workspace @chafian/phone-input-react-native test",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "yarn workspaces run typecheck",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "yarn build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@1.22.19"
+}
+
