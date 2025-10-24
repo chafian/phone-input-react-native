@@ -23,6 +23,8 @@
       "package": "com.phoneinput.example"
     },
     "web": {
+      "bundler": "metro",
+      "output": "single",
       "favicon": "./assets/favicon.png"
     }
   }
