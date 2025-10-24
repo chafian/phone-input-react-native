@@ -22,7 +22,9 @@
       "adaptiveIcon": null,
       "package": "com.phoneinput.example"
     },
-    "web": {}
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
 
