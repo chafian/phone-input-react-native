@@ -2,6 +2,7 @@
   "expo": {
     "name": "Phone Input Example",
     "slug": "phone-input-example",
+    "entryPoint": "./index.js",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": null,
@@ -24,8 +25,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "single",
-      "favicon": "./assets/favicon.png"
+      "output": "single"
     }
   }
 }
