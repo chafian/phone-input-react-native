@@ -18,7 +18,7 @@ Comprehensive examples for using the Advanced Phone Input library.
 
 ```tsx
 import React, { useState } from 'react';
-import { PhoneInput } from '@phone-input/react-native';
+import { PhoneInput } from '@chafian/phone-input-react-native';
 
 export default function BasicExample() {
   const [phone, setPhone] = useState('');
@@ -302,7 +302,7 @@ const [locale, setLocale] = useState('en');
 
 ```tsx
 import { Controller, useForm } from 'react-hook-form';
-import { PhoneInput, isValidPhoneNumber } from '@phone-input/react-native';
+import { PhoneInput, isValidPhoneNumber } from '@chafian/phone-input-react-native';
 
 function FormExample() {
   const { control, handleSubmit } = useForm({
@@ -342,7 +342,7 @@ function FormExample() {
 ```tsx
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { PhoneInput, isValidPhoneNumber } from '@phone-input/react-native';
+import { PhoneInput, isValidPhoneNumber } from '@chafian/phone-input-react-native';
 
 const validationSchema = Yup.object({
   phone: Yup.string()
@@ -376,7 +376,7 @@ function FormikExample() {
 ### Using the Hook
 
 ```tsx
-import { usePhoneInput } from '@phone-input/react-native';
+import { usePhoneInput } from '@chafian/phone-input-react-native';
 
 function HookExample() {
   const phoneInput = usePhoneInput({
@@ -405,7 +405,7 @@ function HookExample() {
 ### Theme Provider
 
 ```tsx
-import { PhoneInputThemeProvider } from '@phone-input/react-native';
+import { PhoneInputThemeProvider } from '@chafian/phone-input-react-native';
 
 function App() {
   const customStyles = {
@@ -526,7 +526,7 @@ phoneRef.current?.setCountry('GB');
 ```tsx
 import React, { useState, useRef } from 'react';
 import { View, Button, Text } from 'react-native';
-import { PhoneInput, type PhoneInputRef } from '@phone-input/react-native';
+import { PhoneInput, type PhoneInputRef } from '@chafian/phone-input-react-native';
 
 export default function CompleteExample() {
   const [phone, setPhone] = useState('');
@@ -588,7 +588,7 @@ export default function CompleteExample() {
 ### Parse Phone Number
 
 ```tsx
-import { parsePhoneNumber } from '@phone-input/react-native';
+import { parsePhoneNumber } from '@chafian/phone-input-react-native';
 
 const parsed = parsePhoneNumber('+14155552671', 'US');
 console.log(parsed.isValid); // true
@@ -599,7 +599,7 @@ console.log(parsed.nationalNumber); // '4155552671'
 ### Format Phone Number
 
 ```tsx
-import { formatPhoneNumber } from '@phone-input/react-native';
+import { formatPhoneNumber } from '@chafian/phone-input-react-native';
 
 const formatted = formatPhoneNumber('+14155552671', 'international', 'US');
 console.log(formatted); // '+1 415-555-2671'
@@ -608,7 +608,7 @@ console.log(formatted); // '+1 415-555-2671'
 ### Validate Phone Number
 
 ```tsx
-import { isValidPhoneNumber } from '@phone-input/react-native';
+import { isValidPhoneNumber } from '@chafian/phone-input-react-native';
 
 const isValid = isValidPhoneNumber('+14155552671', 'US');
 console.log(isValid); // true
@@ -617,7 +617,7 @@ console.log(isValid); // true
 ### Guess Country
 
 ```tsx
-import { guessCountryByNumber } from '@phone-input/react-native';
+import { guessCountryByNumber } from '@chafian/phone-input-react-native';
 
 const country = guessCountryByNumber('+14155552671');
 console.log(country); // 'US'
@@ -626,7 +626,7 @@ console.log(country); // 'US'
 ### Get All Countries
 
 ```tsx
-import { getAllCountries } from '@phone-input/react-native';
+import { getAllCountries } from '@chafian/phone-input-react-native';
 
 const countries = getAllCountries('en');
 console.log(countries); // [{ code: 'US', name: 'United States', dialCode: '+1' }, ...]

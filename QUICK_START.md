@@ -6,10 +6,10 @@ Get up and running with Advanced Phone Input in 5 minutes!
 
 ```bash
 # Using npm
-npm install @phone-input/react-native react-native-svg
+npm install @chafian/phone-input-react-native react-native-svg
 
 # Using yarn
-yarn add @phone-input/react-native react-native-svg
+yarn add @chafian/phone-input-react-native react-native-svg
 
 # For Expo projects
 npx expo install react-native-svg
@@ -20,7 +20,7 @@ npx expo install react-native-svg
 ### 1. Import the Component
 
 ```tsx
-import { PhoneInput } from '@phone-input/react-native';
+import { PhoneInput } from '@chafian/phone-input-react-native';
 ```
 
 ### 2. Add to Your Component
@@ -28,7 +28,7 @@ import { PhoneInput } from '@phone-input/react-native';
 ```tsx
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { PhoneInput } from '@phone-input/react-native';
+import { PhoneInput } from '@chafian/phone-input-react-native';
 
 export default function MyScreen() {
   const [phoneNumber, setPhoneNumber] = useState('');
