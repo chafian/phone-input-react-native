@@ -1,5 +1,9 @@
 # Advanced Phone Input for React Native & Expo
 
+[![npm version](https://badge.fury.io/js/@chafian%2Fphone-input-react-native.svg)](https://www.npmjs.com/package/@chafian/phone-input-react-native)
+[![npm downloads](https://img.shields.io/npm/dm/@chafian/phone-input-react-native.svg)](https://www.npmjs.com/package/@chafian/phone-input-react-native)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 A fully customizable, feature-rich phone input component for React Native and Expo with multi-language support, RTL, real-time validation, and modern SVG country flags.
 
 ## ✨ Features
