@@ -26,10 +26,10 @@ A fully customizable, feature-rich phone input component for React Native and Ex
 
 ```bash
 # npm
-npm install @phone-input/react-native react-native-svg
+npm install @chafian/phone-input-react-native react-native-svg
 
 # yarn
-yarn add @phone-input/react-native react-native-svg
+yarn add @chafian/phone-input-react-native react-native-svg
 
 # For Expo projects, also install:
 npx expo install react-native-svg
@@ -39,7 +39,7 @@ npx expo install react-native-svg
 
 ```tsx
 import React, { useState } from 'react';
-import { PhoneInput } from '@phone-input/react-native';
+import { PhoneInput } from '@chafian/phone-input-react-native';
 
 export default function App() {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -282,7 +282,7 @@ import {
   normalizeDigits,
   getAllCountries,
   getCountryByCode,
-} from '@phone-input/react-native';
+} from '@chafian/phone-input-react-native';
 
 // Parse phone number
 const parsed = parsePhoneNumber('+14155552671', 'US');
